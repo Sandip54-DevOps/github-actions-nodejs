@@ -1,0 +1,8 @@
+name: Get GitHub Info
+on: [workflow_dispatch]
+jobs:
+  github-info:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print Github Info
+      run: echo "${{ toJson(github) }}"
