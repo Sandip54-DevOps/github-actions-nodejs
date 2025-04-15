@@ -9,8 +9,12 @@ jobs:
     - uses: actions/setup-node@v4
       with:
         node-version: '18'
-      name: install node
-    - name: Run Command
-      run: |
-        ls -la
-        pwd
+      name: install Node ENV
+    - name: Install NPM Packages
+      run: npm ci
+    - name: Test NPM
+      run: npm test
+    # - name: Run Command
+    #   run: |
+    #     ls -la
+    #     pwd
