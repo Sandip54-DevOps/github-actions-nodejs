@@ -6,3 +6,5 @@ jobs:
     steps:
     - name: Print Github Info
       run: echo "${{ toJson(github) }}"
+    - name: Print Runtime Repo URL
+      run: echo "URL:- ${{ github.repositoryUrl }}"
