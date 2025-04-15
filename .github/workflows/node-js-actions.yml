@@ -2,7 +2,7 @@ name: nodejs_workflows
 on: push
 jobs:
   node_jobs:
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
     steps:
     - name: Get Code
       uses: actions/checkout@v4
